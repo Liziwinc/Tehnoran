@@ -65,7 +65,7 @@
   block-size: 87px;
   align-self:flex-start;
 }
-
+/* TODO: переименовать навигацию */
 nav {
   display: flex;
   justify-content: center;
