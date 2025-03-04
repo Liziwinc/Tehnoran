@@ -1,0 +1,131 @@
+.header {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1px 2fr;
+  inline-size: 100%;
+  max-inline-size: 1440px;
+  margin: 0 auto;
+  block-size: 25vh;
+  /* background-color: rgba(0, 255, 179, 0.21); */
+  justify-items: center;
+  align-items: center;
+}
+
+.header__logo {
+  block-size: 106px;
+  inline-size: 150px;
+  justify-self: end;
+  margin-right: 1vw;
+}
+
+.header__description {
+  justify-self: start;
+  padding-right: 2vw;
+}
+
+.header__title {
+  color: #8ea31a;
+  font-size: 25px;
+  line-height: 1.2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header__text {
+  color: #404040;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__line {
+  /* padding-right: 1px; */
+  background-color: #9b9b9b77;
+  /* border-right: 1px solid #f4f4f4; */
+  margin: 0;
+  width: 1px;
+  height: 23vh;
+}
+
+.header__address {
+  justify-self: start;
+  margin-left: 3vw;
+  font-size: 20px;
+  font-style: normal;
+  color: #343434;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header__address p{
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.menu{
+  background: #575257;
+  inline-size: 100%; 
+  block-size: 87px;
+  align-self:flex-start;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  block-size: 100%;
+  background: #575257;
+  margin: auto;
+}
+
+nav a {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 35px;
+  text-align: center;
+  block-size: 100%;
+  inline-size: 200px;
+  border-inline: 1px solid #6d696d;
+}
+
+nav a:first-of-type{
+  border-left: none;
+}
+
+nav a:last-of-type{
+  border-right: none;
+}
+
+nav a:hover{
+  background-color: #514c51;
+}
+
+.blocks{
+  display:flex;
+  justify-content: center;
+}
+
+.block{
+  width: 323px;
+  height: 444px;
+  background-color: #6d696d;
+  margin: 64px 50px 64px 0;
+  text-align: center;
+  color: #FFF;
+} 
+
+.block:last-of-type{
+  margin-right: 0;
+}
+
+.block__one{
+
+}
+
+.block__two{
+
+}
+
+.block__three{
+
+}
