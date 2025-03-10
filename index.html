@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/generalTemplate.css" />
+    <link rel="stylesheet" href="./styles/indexstyle.css" />
     <title>ООО "Технологии развития недвижимости", г. Санкт-Петербург</title>
     <meta
       name="description"
@@ -41,8 +42,8 @@
       </address>
     </header>
     <div class="menu">
-      <nav>
-        <a href="#" aria-disabled="true" onclick="return false;">Главная</a>
+      <nav class="navigation">
+        <a class="navigation__active" href="#" aria-disabled="true" onclick="return false;">Главная</a>
         <a href="./pages/portfolio.html">Портфолио</a>
         <a href="./pages/opisanie.html">Описание</a>
         <a href="./pages/sobytiya.html">События</a>
@@ -50,9 +51,51 @@
         <a href="./pages/kontakty.html">Контакты</a>
       </nav>
     </div>
-    <main>
+    <main class="main">
       <section class="blocks">
         <div class="block block__one">
+            <div class="block__bg" style="background-image: url('./img/image.png');"></div>
+            <h2>ТЕХНИЧЕСКИЙ ЗАКАЗЧИК</h2>
+            <ul>
+                <li>Исходная документация</li>
+                <li>Технические задания</li>
+                <li>Сопровождение проектирования и экспертизы</li>
+                <li>Контроль рабочей документации</li>
+                <li>Экономика проекта</li>
+                <li>Сметы и сметно-финансовые расчеты</li>
+                <li>Строительный контроль</li>
+                <li>Консультации и помощь застройщику и инвестору</li>
+            </ul>
+        </div>
+        <div class="block block__two">
+            <div class="block__bg" style="background-image:url('./img/image.png');"></div>
+            <h2>ПРОЕКТИРОВАНИЕ</h2>
+            <ul>
+                <li>Эскизный проект</li>
+                <li>Проект</li>
+                <li>Экспертиза проекта</li>
+                <li>Рабочая документация</li>
+            </ul>
+        </div>
+        <div class="block block__three">
+            <div class="block__bg" style="background-image: url('./img/image.png');"></div>
+            <h2>УПРАВЛЕНИЕ СТРОИТЕЛЬСТВОМ</h2>
+            <ul>
+                <li>Управление и координация капитального строительства</li>
+                <li>Тендеры и подбор надежных подрядчиков</li>
+                <li>Разрешения и согласования в процессе строительства</li>
+                <li>Исполнительная документация</li>
+                <li>Графики</li>
+                <li>Контроль расходов</li>
+                <li>Взаимодействие с госорганами</li>
+                <li>Ввод в эксплуатацию</li>
+                <li>Строительство «под ключ»</li>
+            </ul>
+        </div>
+    </section>
+      <!-- <section class="blocks">
+        <div class="block block__one">
+          <div class="block-bg__one"></div>
           <h2>ТЕХНИЧЕСКИЙ ЗАКАЗЧИК</h2>
           <ul>
             <li>Исходная документация</li>
@@ -66,6 +109,7 @@
           </ul>
         </div>
         <div class="block block__two">
+          <div class="block-bg__two""></div>
           <h2>ПРОЕКТИРОВАНИЕ</h2>
           <ul>
             <li>Эскизный проект</li>
@@ -74,7 +118,8 @@
             <li>Рабочая документация</li>
           </ul>
         </div>
-        <div class="block block__three">
+        <div class="block">
+          <div class="block-bg__three"></div>
           <h2>УПРАВЛЕНИЕ СТРОИТЕЛЬСТВОМ</h2>
           <ul>
             <li>Управление и координация капитального строительства</li>
@@ -88,49 +133,94 @@
             <li>Строительство «под ключ»</li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section>
-        <!-- Здесь перелистыватель фоток -->
-        <h2>Наши проекты</h2>
-        <img src="" alt="ФОТО" />
-      </section>
-
-      <section>
-        <div>
-          <h2>МЫ СТРОИМ ОБЪЕКТЫ</h2>
-          <p>
-            С ОТКРЫТЫМИ КАРТАМИ Функция ООО «ТЕХНОРАН» - Организовать весь
-            строительный процесс по созданию вашего объекта от начала
-            строительства до акта о вводе в эксплуатацию, не скрывая его
-            реальную стоимость. Мы будем рядом от начала и до конца проекта - от
-            составления бизнес-плана, сбора исходно-разрешительной документации,
-            получения ТУ, проектирования и прохождения экспертизы - до
-            строительства объекта, получения ЗОС и ввода объекта в эксплуатацию.
-          </p>
+      <section class="slider">
+        
+        <div class="slider-container">
+          <div class="slide">
+            <!-- slide_image_1 -->
+            <img src="./img/image.png" alt="Фото 1" />
+            <h2>Сохраняя лучшее, создавать новое</h2>
+          </div>
+          <div class="slide">
+            <h2>Сохраняя лучшее, создавать новое2</h2>
+            <img src="./img/image.png" alt="Фото 2" />
+          </div>
+          <div class="slide">
+            <h2>Сохраняя лучшее, создавать новое3</h2>
+            <img src="./img/image.png" alt="Фото 3" />
+          </div>
+          <div class="slide">
+            <h2>Сохраняя лучшее, создавать новое4</h2>
+            <img src="./img/image.png" alt="Фото 4" />
+          </div>
+          <div class="slide">
+            <h2>Сохраняя лучшее, создавать новое5</h2>
+            <img src="./img/image.png" alt="Фото 5" />
+          </div>
         </div>
-        <div>
-          <ul>
-            <li><img src="" alt="ФОТО" />Опытные сотрудники</li>
-            <li>
-              <img src="" alt="ФОТО" />Выбор надежных партнеров-субподрядчиков
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__features">
+          <ul class="features__list">
+            <li class="features__item">
+              <span class="features__text">Опытные сотрудники</span>
+              <img class="features__icon" src="./img/favicon.svg" alt="ФОТО" />
             </li>
-            <li><img src="" alt="ФОТО" />Жесткий контроль качества и сроков</li>
+            <li class="features__item">
+              <span class="features__text"
+                >Выбор надежных партнеров-субподрядчиков</span
+              >
+              <img class="features__icon" src="./img/favicon.svg" alt="ФОТО" />
+            </li>
+            <li class="features__item">
+              <span class="features__text"
+                >Жесткий контроль качества и сроков</span
+              >
+              <img class="features__icon" src="./img/favicon.svg" alt="ФОТО" />
+            </li>
           </ul>
+        </div>
+        <div class="about__text">
+          <h2 class="about__title">МЫ СТРОИМ ОБЪЕКТЫ С ОТКРЫТЫМИ КАРТАМИ</h2>
+          <p class="about__description">
+            Функция ООО «ТЕХНОРАН» - Организовать весь строительный процесс по
+            созданию вашего объекта от начала строительства до акта о вводе в
+            эксплуатацию, не скрывая его реальную стоимость.
+          </p>
+          <p class="about__description">
+            Мы будем рядом от начала и до конца проекта - от составления
+            бизнес-плана, сбора исходно-разрешительной документации, получения
+            ТУ, проектирования и прохождения экспертизы - до строительства
+            объекта, получения ЗОС и ввода объекта в эксплуатацию.
+          </p>
         </div>
       </section>
     </main>
-    <footer>
-      <address>
+    <footer class="footer">
+      <address class="footer__address">
         <p>Адрес:</p>
         <a href="https://yandex.ru/maps/-/CHBeY67Q" target="_blank"
-          >г. Санкт-Петербург, Невский пр., дом 30</a
+          >г. Санкт-Петербург, Невский пр.,<br />
+          дом 30</a
         >
+      </address>
+      <address class="footer__tel">
         <p>Телефон:</p>
-        <a href="tel:+78123349171">+ 7 (812) 334-91-71</a><br />
-        <a href="tel:+79219470239">+ 7 (921) 947‐02‐39</a><br />
+        <a href="tel:+78123349171">+ 7 (812) 334-91-71</a>
+        <a href="tel:+79219470239">+ 7 (921) 947‐02‐39</a>
         <a href="tel:+79213125039">+ 7 (921) 312‐50‐39</a>
       </address>
     </footer>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
