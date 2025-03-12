@@ -1,0 +1,84 @@
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  max-width: 1440px;
+  margin: auto;
+  padding: 50px 120px;
+}
+
+.contacts__info {
+  max-width: 300px;
+  color: #262626;
+  font-family: "Open sans", sans-serif;
+  font-style: normal;
+}
+
+.contacts__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contacts__phone {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contacts__role {
+  font-size: 16px;
+  font-weight: bold;
+  margin-block: 15px 5px;
+}
+
+.contacts__subtitle {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.subtitle-address{
+  margin-bottom: 10px;
+}
+
+.contacts__email{
+  display: flex;  
+  flex-direction: column;
+}
+
+.contacts__email a {
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.contacts__email a:hover {
+  text-decoration: underline;
+}
+
+.contacts__map iframe {
+  width: 720px;
+  height: 470px;
+  border-radius: 8px;
+}
+
+
+.copy-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 128, 0, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+.copy-notification.show {
+  opacity: 1;
+  visibility: visible;
+}

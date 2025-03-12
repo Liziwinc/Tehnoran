@@ -2,7 +2,7 @@
 .blocks {
   display: flex;
   justify-content: center;
-  margin-block: 64px;
+  margin-block: 32px;
 }
 
 .block {
