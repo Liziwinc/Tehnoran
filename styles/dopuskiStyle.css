@@ -29,6 +29,7 @@ body.modal-open {
   border: 3px solid #525e19;
   border-radius: 7px;
   padding: 25px 15px;
+  overflow: hidden;
 }
 
 .photo {
