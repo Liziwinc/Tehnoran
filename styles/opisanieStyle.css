@@ -49,8 +49,11 @@
   transform: translateY(-50%);
   width: 36px;
   height: 36px;
-  background-image: url("../img/favicon.svg");
-  background-size: contain;
+  background-image: url("../img/galochka.svg");
+  background-color: #525e19;
+  border-radius: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*  */
 .under-text{

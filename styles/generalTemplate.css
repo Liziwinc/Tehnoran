@@ -15,6 +15,7 @@
   inline-size: 150px;
   justify-self: end;
   margin-right: 2.6vw;
+  object-fit: cover;
 }
 
 .header__description {

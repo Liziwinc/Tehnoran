@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/generalTemplate.css" />
     <link rel="stylesheet" href="./styles/indexstyle.css" />
+    <!-- Подключаем стили Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Подключаем Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <title>ООО "Технологии развития недвижимости", г. Санкт-Петербург</title>
     <meta
       name="description"
@@ -21,7 +26,7 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="./img/image.png" alt="ФОТО" />
+      <img class="header__logo" src="./img/logo.png" alt="ФОТО" />
       <a class="header__description">
         <h1 class="header__title">Технологии развития недвижимости</h1>
         <p class="header__text">
@@ -43,7 +48,13 @@
     </header>
     <div class="menu">
       <nav class="navigation">
-        <a class="navigation__active" href="#" aria-disabled="true" onclick="return false;">Главная</a>
+        <a
+          class="navigation__active"
+          href="#"
+          aria-disabled="true"
+          onclick="return false;"
+          >Главная</a
+        >
         <a href="./pages/portfolio.html">Портфолио</a>
         <a href="./pages/opisanie.html">Описание</a>
         <a href="./pages/sobytiya.html">События</a>
@@ -54,113 +65,124 @@
     <main class="main">
       <section class="blocks">
         <div class="block block__one">
-            <div class="block__bg" style="background-image: url('./img/image.png');"></div>
-            <h2>ТЕХНИЧЕСКИЙ ЗАКАЗЧИК</h2>
-            <ul>
-                <li>Исходная документация</li>
-                <li>Технические задания</li>
-                <li>Сопровождение проектирования и экспертизы</li>
-                <li>Контроль рабочей документации</li>
-                <li>Экономика проекта</li>
-                <li>Сметы и сметно-финансовые расчеты</li>
-                <li>Строительный контроль</li>
-                <li>Консультации и помощь застройщику и инвестору</li>
-            </ul>
+          <div
+            class="block__bg"
+            style="background-image: url('./img/block_one_bg.jpg')"
+          ></div>
+          <h2>ТЕХНИЧЕСКИЙ ЗАКАЗЧИК</h2>
+          <ul>
+            <li>Исходная документация</li>
+            <li>Технические задания</li>
+            <li>Сопровождение проектирования и экспертизы</li>
+            <li>Контроль рабочей документации</li>
+            <li>Экономика проекта</li>
+            <li>Сметы и сметно-финансовые расчеты</li>
+            <li>Строительный контроль</li>
+            <li>Консультации и помощь застройщику и инвестору</li>
+          </ul>
         </div>
         <div class="block block__two">
-            <div class="block__bg" style="background-image:url('./img/image.png');"></div>
-            <h2>ПРОЕКТИРОВАНИЕ</h2>
-            <ul>
-                <li>Эскизный проект</li>
-                <li>Проект</li>
-                <li>Экспертиза проекта</li>
-                <li>Рабочая документация</li>
-            </ul>
+          <div
+            class="block__bg"
+            style="background-image: url('./img/block_two_bg.jpg')"
+          ></div>
+          <h2>ПРОЕКТИРОВАНИЕ</h2>
+          <ul>
+            <li>Эскизный проект</li>
+            <li>Проект</li>
+            <li>Экспертиза проекта</li>
+            <li>Рабочая документация</li>
+          </ul>
         </div>
         <div class="block block__three">
-            <div class="block__bg" style="background-image: url('./img/image.png');"></div>
-            <h2>УПРАВЛЕНИЕ СТРОИТЕЛЬСТВОМ</h2>
-            <ul>
-                <li>Управление и координация капитального строительства</li>
-                <li>Тендеры и подбор надежных подрядчиков</li>
-                <li>Разрешения и согласования в процессе строительства</li>
-                <li>Исполнительная документация</li>
-                <li>Графики</li>
-                <li>Контроль расходов</li>
-                <li>Взаимодействие с госорганами</li>
-                <li>Ввод в эксплуатацию</li>
-                <li>Строительство «под ключ»</li>
-            </ul>
-        </div>
-    </section>
-      
-
-      <section class="slider">
-        <div class="slider-container">
-          <div class="slide">
-            <!-- slide_image_1 -->
-            <img src="./img/image.png" alt="Фото 1" />
-            <h2>Сохраняя лучшее, создавать новое</h2>
-          </div>
-          <div class="slide">
-            <h2>Сохраняя лучшее, создавать новое2</h2>
-            <img src="./img/image.png" alt="Фото 2" />
-          </div>
-          <div class="slide">
-            <h2>Сохраняя лучшее, создавать новое3</h2>
-            <img src="./img/image.png" alt="Фото 3" />
-          </div>
-          <div class="slide">
-            <h2>Сохраняя лучшее, создавать новое4</h2>
-            <img src="./img/image.png" alt="Фото 4" />
-          </div>
-          <div class="slide">
-            <h2>Сохраняя лучшее, создавать новое5</h2>
-            <img src="./img/image.png" alt="Фото 5" />
-          </div>
-        </div>
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
+          <div
+            class="block__bg"
+            style="background-image: url('./img/block_three_bg.jpg')"
+          ></div>
+          <h2>УПРАВЛЕНИЕ СТРОИТЕЛЬСТВОМ</h2>
+          <ul>
+            <li>Управление и координация капитального строительства</li>
+            <li>Тендеры и подбор надежных подрядчиков</li>
+            <li>Разрешения и согласования в процессе строительства</li>
+            <li>Исполнительная документация</li>
+            <li>Графики</li>
+            <li>Контроль расходов</li>
+            <li>Взаимодействие с госорганами</li>
+            <li>Ввод в эксплуатацию</li>
+            <li>Строительство «под ключ»</li>
+          </ul>
         </div>
       </section>
 
+      <section class="slider">
+        <div class="swiper slider-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img loading="lazy" src="./img/slider_1.jpg" alt="Фото 1" />
+              <h2>Строим с гарантией качества, бережем ваши ресурсы</h2>
+            </div>
+            <div class="swiper-slide">
+              <h2>Строительный контроль, который окупается</h2>
+              <img loading="lazy" src="./img/slider_2.jpg" alt="Фото 2" />
+            </div>
+            <div class="swiper-slide">
+              <h2>Строим будущее вместе, от проекта до реализации</h2>
+              <img loading="lazy" src="./img/slider_3.jpg" alt="Фото 3" />
+            </div>
+            <div class="swiper-slide">
+              <h2>Сокращаем сроки, оптимизируем затраты, гарантируем качество</h2>
+              <img loading="lazy" src="./img/slider_4.jpg" alt="Фото 4" />
+            </div>
+            <div class="swiper-slide">
+              <h2>От проекта до ключа, профессионально и надежно</h2>
+              <img loading="lazy" src="./img/slider_5.JPG" alt="Фото 5" />
+            </div>
+          </div>
+      
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      
       <section class="about">
         <div class="about__features">
           <ul class="features__list">
             <li class="features__item">
               <span class="features__text">Опытные сотрудники</span>
-              <img class="features__icon" src="./img/favicon.svg" alt="ФОТО" />
+              <img class="features__icon" src="./img/about_img_1.png" alt="ФОТО" />
             </li>
             <li class="features__item">
               <span class="features__text"
                 >Выбор надежных партнеров-субподрядчиков</span
               >
-              <img class="features__icon" src="./img/favicon.svg" alt="ФОТО" />
+              <img class="features__icon" src="./img/about_img_2.png" alt="ФОТО" />
             </li>
             <li class="features__item">
               <span class="features__text"
                 >Жесткий контроль качества и сроков</span
               >
-              <img class="features__icon" src="./img/favicon.svg" alt="ФОТО" />
+              <img class="features__icon" src="./img/about_img_3.png" alt="ФОТО" />
             </li>
           </ul>
         </div>
         <div class="about__text">
           <h2 class="about__title">МЫ СТРОИМ ОБЪЕКТЫ С ОТКРЫТЫМИ КАРТАМИ</h2>
           <p class="about__description">
-            Функция ООО «ТЕХНОРАН» - Организовать весь строительный процесс по
-            созданию вашего объекта от начала строительства до акта о вводе в
-            эксплуатацию, не скрывая его реальную стоимость.
+            Мы предлагаем профессиональный строительный контроль и услуги
+            генерального подряда для инвесторов и застройщиков. Наш опыт и
+            принципы работы – честность, скорость и бескомпромиссное качество –
+            позволяют нам успешно реализовывать проекты любой сложности. Мы
+            помогаем инвесторам защитить свои вложения и гарантируем
+            застройщикам эффективное управление строительством.
           </p>
           <p class="about__description">
-            Мы будем рядом от начала и до конца проекта - от составления
-            бизнес-плана, сбора исходно-разрешительной документации, получения
-            ТУ, проектирования и прохождения экспертизы - до строительства
-            объекта, получения ЗОС и ввода объекта в эксплуатацию.
+            Мы – ваш надежный генеральный подрядчик, который берет на себя весь
+            комплекс работ, от проектирования до сдачи объекта в эксплуатацию.
+            Мы гарантируем соблюдение сроков, оптимизацию затрат и высокое
+            качество строительства. С нами вы можете быть уверены в успешной
+            реализации вашего проекта.
           </p>
         </div>
       </section>
@@ -183,3 +205,36 @@
     <script src="./scripts/index.js"></script>
   </body>
 </html>
+
+      <!-- далее код для слайдера на чистом js
+<section class="slider">
+        <div class="slider-container">
+          <div class="slide">
+            <img loading="lazy" src="./img/slider_1.jpg" alt="Фото 1" />
+            <h2>Строим с гарантией качества, бережем ваши ресурсы</h2>
+          </div>
+          <div class="slide">
+            <h2>Строительный контроль, который окупается</h2>
+            <img loading="lazy" src="./img/slider_2.jpg" alt="Фото 2" />
+          </div>
+          <div class="slide">
+              <h2>Строим будущее вместе, от проекта до реализации</h2>
+              <img loading="lazy" src="./img/slider_3.jpg" alt="Фото 3" />
+            </div>
+          <div class="slide">
+            <h2>Сокращаем сроки, оптимизируем затраты, гарантируем качество</h2>
+            <img loading="lazy" src="./img/slider_4.jpg" alt="Фото 4" />
+          </div>
+          <div class="slide">
+            <h2>От проекта до ключа, профессионально и надежно</h2>
+            <img loading="lazy" src="./img/slider_5.JPG" alt="Фото 5"  />
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </section> -->

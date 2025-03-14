@@ -15,8 +15,10 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="../img/image.png" alt="ФОТО" />
-      <a class="header__description">
+      <a class="header__logo" href="../index.html">
+        <img  class="header__logo" src="../img/logo.png" alt="ФОТО" />
+        </a>
+        <a href="../index.html" class="header__description">
         <h1 class="header__title">Технологии развития<br />недвижимости</h1>
         <p class="header__text">
           Строительство, генподряд, технический заказчик, управление
@@ -56,7 +58,7 @@
         <div class="block block__one">
           <div
             class="block__bg"
-            style="background-image: url('../img/image.png')"
+            style="background-image: url('../img/block_three_bg.jpg')"
           ></div>
           <p>
             Опыт проектирования, исполнения функций технического заказчика и
@@ -73,39 +75,34 @@
       <section class="object">
         <h2 class="object__title">Индивидуальное жилищное строительство</h2>
         <p class="object__text">Коттеджный поселок (КП «Альпино», Ленинградская обл., пос. Воейково, Всеволожский район)</p>
+
+        <div class="photos">
+          <div class="photo-wrapper">
+            <img src="../img/alpino_pre.JPG" alt="Фото 1" class="photo" data-src="../img/alpino_pre.JPG">
+            <p class="caption">До начала работ</p>
+          </div>
+          <div class="photo-wrapper">
+            <img src="../img/alpino_aft.jpg" alt="Фото 2" class="photo" data-src="../img/alpino_pre.JPG">
+            <p class="caption">Результат</p>
+          </div>
+        </div>
+
         <div class="cards">
           <div class="card">
-            <img src="../img/favicon.svg" alt="Иконка 1">
+            <img src="../img/alpino_house.svg" alt="Иконка 1">
             <h3 class="card__title">36 жилых домов по 9 проектам в альпийском стиле</h3>
           </div>
           <div class="card">
-            <img src="../img/favicon.svg" alt="Иконка 2">
+            <img src="../img/alpino_water.svg" alt="Иконка 2">
             <h3 class="card__title">Своя сеть водоснабжения и водоотведения</h3>
           </div>
           <div class="card">
-            <img src="../img/favicon.svg" alt="Иконка 3">
+            <img  src="../img/alpino_gaz.svg" alt="Иконка 3">
             <h3 class="card__title">Своя сеть газоснабжения</h3>
           </div>
         </div>
-
-          <div class="photos">
-            <div class="photo-wrapper">
-              <img src="../img/image.png" alt="Фото 1" class="photo" data-src="../img/image.png">
-              <p class="caption">До начала работ</p>
-            </div>
-            <div class="photo-wrapper">
-              <img src="../img/image.png" alt="Фото 2" class="photo" data-src="../img/image.png">
-              <p class="caption">Результат</p>
-            </div>
-          </div>
-        
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="modalImg">
-        </div>
-
-      </section>
-
+        </section>
+   
     </main>
     <footer class="footer">
       <address class="footer__address">
@@ -122,6 +119,11 @@
         <a href="tel:+79213125039">+ 7 (921) 312‐50‐39</a>
       </address>
     </footer>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
     <script src="../scripts/portfolio.js"></script>
   </body>
 </html>
