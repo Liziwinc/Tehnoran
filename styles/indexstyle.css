@@ -7,7 +7,7 @@
 
 .block {
   width: 323px;
-  height: 444px;
+  height: 250px;
   background-color: #6d696d;
   margin-right: 50px;
   text-align: center;
@@ -16,6 +16,11 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.block:hover{
+  transform: scale(1.1);
 }
 
 .block:last-of-type {
@@ -28,27 +33,18 @@
   position: relative;
   z-index: 1;
   font-family: 'Open sans', sans-serif;
+  text-transform: uppercase;
 }
 
-.block ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  z-index: 1;
-}
-
-.block li {
+.block p {
   font-family: "Arial", "Helvetica", sans-serif;;
   font-size: 15px;
   text-align: left;
   padding: 5px 0;
   position: relative;
   z-index: 1;
-}
+  text-align: justify;
 
-.block li:last-child {
-  border-bottom: none;
 }
 
 .block__bg {
