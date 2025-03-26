@@ -43,8 +43,13 @@
   padding: 5px 0;
   position: relative;
   z-index: 1;
-  text-align: justify;
+  text-align: center;
+  color: transparent;
+  transition: color 0.3s ease-in-out;
+}
 
+.block:hover p {
+  color: #fff;
 }
 
 .block__bg {
