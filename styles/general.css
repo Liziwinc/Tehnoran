@@ -94,6 +94,9 @@
     width: clamp(150px, 15vw, 150px);
     grid-area: 2 / 1 / 3 / 2;
   }
+  .header__address a {
+    font-weight: 600;    
+  }
 }
 /* HEADER */
 /* MENU */
