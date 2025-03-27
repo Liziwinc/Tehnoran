@@ -24,36 +24,6 @@ const newsData = [
     text: 'Совместно с ООО «ТЕЗИС» закончили строительно-монтажные работы по закольцовке газопровода для нужд производства ООО «ЦПТ» в ОЭЗ Новоорловская.'
 }
 ];
-/*
-const newsContainer = document.getElementById('news-container');
-
-newsData.forEach(item => {
-  const newsItem = document.createElement('div');
-  newsItem.classList.add('news-item');
-
-  const newsTitle = document.createElement('h2');
-  newsTitle.classList.add('news-title');
-  newsTitle.textContent = item.title;
-
-  const newsContent = document.createElement('div');
-  newsContent.classList.add('news-content');
-
-  const newsImage = document.createElement('img');
-  newsImage.src = item.image;
-  newsImage.alt = item.title;
-
-  const newsText = document.createElement('p');
-  newsText.textContent = item.text;
-
-  newsContent.appendChild(newsImage);
-  newsContent.appendChild(newsText);
-
-  newsItem.appendChild(newsTitle);
-  newsItem.appendChild(newsContent);
-
-  newsContainer.appendChild(newsItem);
-});*/
-
 
 const newsContainer = document.getElementById('news-container');
 const popupContainer = document.getElementById('popup-container');
