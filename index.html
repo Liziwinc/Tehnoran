@@ -4,14 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/generalTemplate.css" />
-    <link rel="stylesheet" href="./styles/indexstyle.css" />
-    <!-- Подключаем стили Swiper -->
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/indexStyle.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- Подключаем Swiper.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <title>ООО "Технологии развития недвижимости", г. Санкт-Петербург</title>
@@ -28,6 +26,24 @@
     <link rel="apple-touch-icon" href="./img/favicon.png" />
   </head>
   <body>
+    <div class="menu-burger">
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+      <label for="burger-checkbox" class="burger"></label>
+      <ul class="menu-list">
+          <li><a
+            class="navigation__active menu-item"
+            href="#"
+            aria-disabled="true"
+            onclick="return false;"
+            >Главная</a
+          ><li>
+          <li><a href="./pages/portfolio.html" class="menu-item" >Портфолио</a><li>
+          <li><a href="./pages/opisanie.html" class="menu-item">Описание</a><li>
+          <li><a href="./pages/sobytiya.html" class="menu-item">События</a><li>
+          <li><a href="./pages/dopuski.html" class="menu-item">Допуски</a><li>
+          <li><a href="./pages/kontakty.html" class="menu-item">Контакты</a><li>
+      </ul>
+  </div>
     <header class="header">
       <img class="header__logo" src="./img/logo.png" alt="ФОТО" />
       <a class="header__description">
@@ -49,6 +65,7 @@
         <a href="tel:+79213125039">+ 7 (921) 312‐50‐39</a>
       </address>
     </header>
+    <hr class="header__underline" />
     <menu class="menu">
       <nav class="navigation">
         <a
@@ -106,6 +123,7 @@
         </a>
       </section>
 
+      
       <section class="slider">
         <div class="swiper slider-container">
           <div class="swiper-wrapper">
@@ -140,6 +158,7 @@
         </div>
       </section>
 
+      
       <section class="about">
         <div class="about__features">
           <ul class="features__list">
@@ -212,35 +231,3 @@
   </body>
 </html>
 
-<!-- далее код для слайдера на чистом js
-<section class="slider">
-        <div class="slider-container">
-          <div class="slide">
-            <img loading="lazy" src="./img/slider_1.jpg" alt="Фото 1" />
-            <h2>Строим с гарантией качества, бережем ваши ресурсы</h2>
-          </div>
-          <div class="slide">
-            <h2>Строительный контроль, который окупается</h2>
-            <img loading="lazy" src="./img/slider_2.jpg" alt="Фото 2" />
-          </div>
-          <div class="slide">
-              <h2>Строим будущее вместе, от проекта до реализации</h2>
-              <img loading="lazy" src="./img/slider_3.jpg" alt="Фото 3" />
-            </div>
-          <div class="slide">
-            <h2>Сокращаем сроки, оптимизируем затраты, гарантируем качество</h2>
-            <img loading="lazy" src="./img/slider_4.jpg" alt="Фото 4" />
-          </div>
-          <div class="slide">
-            <h2>От проекта до ключа, профессионально и надежно</h2>
-            <img loading="lazy" src="./img/slider_5.JPG" alt="Фото 5"  />
-          </div>
-        </div>
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
-      </section> -->

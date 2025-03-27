@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/generalTemplate.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
     <link rel="stylesheet" href="../styles/dopuskiStyle.css" />
     <title>ООО "Технологии развития недвижимости", г. Санкт-Петербург</title>
     <meta
@@ -20,6 +20,25 @@
     <link rel="apple-touch-icon" href="../img/favicon.png" />
   </head>
   <body>
+    <div class="menu-burger">
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+      <label for="burger-checkbox" class="burger"></label>
+      <ul class="menu-list">
+          <li><a
+            class="menu-item"
+            href="../index.html"
+            >Главная</a
+          ><li>
+          <li><a href="./portfolio.html" class="menu-item" >Портфолио</a><li>
+          <li><a href="./opisanie.html" class="menu-item">Описание</a><li>
+          <li><a href="./sobytiya.html" class="menu-item">События</a><li>
+          <li><a href="./dopuski.html" class="navigation__active menu-item"
+            aria-disabled="true"
+            onclick="return false;">
+            Допуски</a><li>
+          <li><a href="./kontakty.html" class="menu-item">Контакты</a><li>
+      </ul>
+  </div>
     <header class="header">
      <a class="header__logo" href="../index.html">
       <img  class="header__logo" src="../img/logo.png" alt="ФОТО" />
@@ -42,6 +61,7 @@
       <a href="tel:+79213125039">+ 7 (921) 312‐50‐39</a>
     </address>
   </header>
+  <hr class="header__underline" />
   <menu class="menu">
     <nav class="navigation">
       <a href="../index.html">Главная</a>
