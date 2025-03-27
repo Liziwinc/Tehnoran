@@ -15,23 +15,36 @@
   </head>
   <body>
     <div class="menu-burger">
-      <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
       <label for="burger-checkbox" class="burger"></label>
       <ul class="menu-list">
-          <li><a class="menu-item" href="../index.html">Главная</a><li>
-          <li><a href="./portfolio.html" class="menu-item" >Портфолио</a><li>
-          <li><a href="./opisanie.html" class="menu-item">Описание</a><li>
-          <li><a href="./sobytiya.html" class="menu-item">События</a><li>
-          <li><a href="./dopuski.html" class="menu-item">Допуски</a><li>
-          <li><a href="./kontakty.html" class="navigation__active menu-item" 
-            aria-disabled="true" onclick="return false;">Контакты</a><li>
+        <li><a class="menu-item" href="../index.html">Главная</a></li>
+        <li></li>
+        <li><a href="./portfolio.html" class="menu-item">Портфолио</a></li>
+        <li></li>
+        <li><a href="./opisanie.html" class="menu-item">Описание</a></li>
+        <li></li>
+        <li><a href="./sobytiya.html" class="menu-item">События</a></li>
+        <li></li>
+        <li><a href="./dopuski.html" class="menu-item">Допуски</a></li>
+        <li></li>
+        <li>
+          <a
+            href="./kontakty.html"
+            class="navigation__active menu-item"
+            aria-disabled="true"
+            onclick="return false;"
+            >Контакты</a
+          >
+        </li>
+        <li></li>
       </ul>
-  </div>
+    </div>
     <header class="header">
       <a class="header__logo" href="../index.html">
-        <img  class="header__logo" src="../img/logo.png" alt="ФОТО" />
-        </a>
-        <a href="../index.html" class="header__description">
+        <img class="header__logo" src="../img/logo.png" alt="ФОТО" />
+      </a>
+      <a href="../index.html" class="header__description">
         <h1 class="header__title">Технологии развития<br />недвижимости</h1>
         <p class="header__text">
           Строительство, генподряд, технический заказчик, управление
@@ -67,45 +80,68 @@
         >
       </nav>
     </menu>
-    
+
     <main>
       <section class="contacts">
         <address class="contacts__info">
-          <h2 class="contacts__title">ООО "Технологии развития недвижимости"</h2>
-          <a href="tel:+78123349171" class="contacts__phone">+7 812 334-91-71</a>
+          <h2 class="contacts__title">
+            ООО "Технологии развития недвижимости"
+          </h2>
+          <a href="tel:+78123349171" class="contacts__phone"
+            >+7 812 334-91-71</a
+          >
 
           <p class="contacts__role">Управляющий</p>
-          <a href="tel:+79219470239" class="contacts__phone">+7 921 947-02-39</a>
+          <a href="tel:+79219470239" class="contacts__phone"
+            >+7 921 947-02-39</a
+          >
 
           <p class="contacts__role">Помощник управляющего</p>
-          <a href="tel:+79213125039" class="contacts__phone">+7 921 312-50-39</a>
+          <a href="tel:+79213125039" class="contacts__phone"
+            >+7 921 312-50-39</a
+          >
 
           <p class="contacts__subtitle subtitle-address">Адрес:</p>
-          <a  href="https://yandex.ru/maps/-/CHBeY67Q" target="_blank"
-          >г. Санкт-Петербург, Невский пр., <br>дом 30</a>
+          <a href="https://yandex.ru/maps/-/CHBeY67Q" target="_blank"
+            >г. Санкт-Петербург, Невский пр., <br />дом 30</a
+          >
 
           <p class="contacts__subtitle">Почта:</p>
           <div class="contacts__email">
-            <a href="mailto:technoran@nevsky30.ru" onclick="copyEmail(event, 'technoran@nevsky30.ru')">technoran@nevsky30.ru</a>
-            <a href="mailto:kulakova@nevsky30.ru" onclick="copyEmail(event, 'kulakova@nevsky30.ru')">kulakova@nevsky30.ru</a>
+            <a
+              href="mailto:technoran@nevsky30.ru"
+              onclick="copyEmail(event, 'technoran@nevsky30.ru')"
+              >technoran@nevsky30.ru</a
+            >
+            <a
+              href="mailto:kulakova@nevsky30.ru"
+              onclick="copyEmail(event, 'kulakova@nevsky30.ru')"
+              >kulakova@nevsky30.ru</a
+            >
           </div>
-          <div id="copyNotification" class="copy-notification">Почта скопирована!</div>
+          <div id="copyNotification" class="copy-notification">
+            Почта скопирована!
+          </div>
           <script>
             function copyEmail(event, email) {
-            event.preventDefault(); 
+              event.preventDefault();
 
-            navigator.clipboard.writeText(email).then(() => {
-              const notification = document.getElementById("copyNotification");
-              notification.classList.add("show");
+              navigator.clipboard
+                .writeText(email)
+                .then(() => {
+                  const notification =
+                    document.getElementById("copyNotification");
+                  notification.classList.add("show");
 
-              setTimeout(() => {
-                notification.classList.remove("show");
-              }, 2000);
-            }).catch(err => {
-              console.error("Ошибка копирования: ", err);
-            });
-          }
-          </script>          
+                  setTimeout(() => {
+                    notification.classList.remove("show");
+                  }, 2000);
+                })
+                .catch((err) => {
+                  console.error("Ошибка копирования: ", err);
+                });
+            }
+          </script>
         </address>
         <div class="contacts__map">
           <iframe
@@ -115,7 +151,6 @@
           ></iframe>
         </div>
       </section>
-
     </main>
     <footer class="footer">
       <address class="footer__address">

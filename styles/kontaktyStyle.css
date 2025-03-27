@@ -37,12 +37,12 @@
   margin-top: 20px;
 }
 
-.subtitle-address{
+.subtitle-address {
   margin-bottom: 10px;
 }
 
-.contacts__email{
-  display: flex;  
+.contacts__email {
+  display: flex;
   flex-direction: column;
 }
 
@@ -61,7 +61,6 @@
   height: 470px;
   border-radius: 8px;
 }
-
 
 .copy-notification {
   position: fixed;

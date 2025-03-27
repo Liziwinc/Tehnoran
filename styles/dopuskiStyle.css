@@ -12,7 +12,7 @@ body.modal-open {
 .title {
   font-size: 32px;
   margin-bottom: 20px;
-  font-family: 'Open sans',sans-serif;
+  font-family: "Open sans", sans-serif;
 }
 
 .photos {
@@ -63,10 +63,10 @@ body.modal-open {
 }
 
 .modal-content {
-  margin:2% auto;
+  margin: 2% auto;
   display: block;
   max-height: 90%;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 .close {
