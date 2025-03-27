@@ -119,29 +119,6 @@
               >kulakova@nevsky30.ru</a
             >
           </div>
-          <div id="copyNotification" class="copy-notification">
-            Почта скопирована!
-          </div>
-          <script>
-            function copyEmail(event, email) {
-              event.preventDefault();
-
-              navigator.clipboard
-                .writeText(email)
-                .then(() => {
-                  const notification =
-                    document.getElementById("copyNotification");
-                  notification.classList.add("show");
-
-                  setTimeout(() => {
-                    notification.classList.remove("show");
-                  }, 2000);
-                })
-                .catch((err) => {
-                  console.error("Ошибка копирования: ", err);
-                });
-            }
-          </script>
         </address>
         <div class="contacts__map">
           <iframe
@@ -151,6 +128,9 @@
           ></iframe>
         </div>
       </section>
+      <div id="copyNotification" class="copy-notification">
+        Почта скопирована!
+      </div>
     </main>
     <footer class="footer">
       <address class="footer__address">
@@ -167,5 +147,25 @@
         <a href="tel:+79213125039">+ 7 (921) 312‐50‐39</a>
       </address>
     </footer>
+    <script>
+      function copyEmail(event, email) {
+        event.preventDefault();
+
+        navigator.clipboard
+          .writeText(email)
+          .then(() => {
+            const notification =
+              document.getElementById("copyNotification");
+            notification.classList.add("show");
+
+            setTimeout(() => {
+              notification.classList.remove("show");
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error("Ошибка копирования: ", err);
+          });
+      }
+    </script>
   </body>
 </html>
