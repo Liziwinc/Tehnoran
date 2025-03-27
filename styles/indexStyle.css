@@ -307,6 +307,10 @@
     margin-left: 0;
   }
 
+  .block:hover {
+    transform: scale(1.01);
+}
+
   .about__title {
     text-align: center;
   }
