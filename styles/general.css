@@ -72,7 +72,7 @@
     display: block;
   }
 }
-@media (width <= 426px) {
+@media (width <= 500px) {
   .header {
     inline-size: 100vw;
     grid-template-columns: repeat(2, 1fr);
